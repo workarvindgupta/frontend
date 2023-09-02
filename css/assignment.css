@@ -1,0 +1,48 @@
+#parentBox{
+    display: flex;
+}
+
+h2{
+    text-align: center;
+}
+
+
+.box{
+    /* height: 200px; */
+    width: 23%;
+    /* border: 1px solid crimson; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+.avatar{
+    width: 100%;
+    /* border-radius: 15px; */
+    /* 25 percent aaega agar 25 liya toh  */
+}
+
+.tc{
+    text-align: center;
+}
+
+
+.logo{
+    width: 140px;
+    margin: auto;
+    display: block;
+}
+
+
+p{
+    /* margin: -10px 0 -5px 0; */
+    text-align: center;
+    color: darkgray;
+}
+
+
+#parentBox1{
+    display: flex;
+}
+
