@@ -1,0 +1,39 @@
+/* Write your styles here */
+
+#container{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+
+#container > div{
+    width: 31%;
+    margin: auto;
+    text-align: center;
+}
+
+#container img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+h1
+{
+    font-size: 60px;
+     color: #c78b36;
+     text-align: center;
+    }
+
+.des{
+    line-height: 25px;
+    text-align: center;
+    width: 44%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+h2+p{
+
+    color: #c78b36;
+}
