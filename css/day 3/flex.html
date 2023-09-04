@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex </title>
+    <style>
+      #parent{
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* align-items: stretch; */
+      }
+
+      #parent > div{
+        color: white;
+        padding: 50px;
+        font-size: 25px;
+      }
+
+      #parent > div:first-child{
+        background-color: salmon;
+        flex-grow: 2;
+        /* order: 0; */
+ 
+      }
+
+      #parent > div:nth-child(2){
+        background-color: seagreen;
+        flex-grow: 1;
+        /* order: 1; */
+       
+      }
+
+      #parent >div:last-child{
+        background-color: plum;
+
+   
+      }
+
+      /* 0 0 1 => height wise  */
+
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+</body>
+</html>
+ 
+<!-- 1.parent properties 1. flex-direction 2.flex-wrap  3.justify-content 
+2.child properties - 1.order 2.flexgrow -->
+
+<!-- 
+div  => center wrt horizontal as well as vertical axes
+
+
+justify-content center 
+align-items center   -->
+
+
+
+<!-- size of each box=100px  -->
+
+<!-- remaining white -->
+<!-- 
+1 div =>100px + 600px/2 =400px
+2 div => 100px + 600px/2 =400px -->
+
+<!-- name   age profession  -->

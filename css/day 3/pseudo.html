@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+       button{
+        background-color: crimson;
+        color: wheat;
+        padding: 10px 20px;
+        /* tpo and bottom     left and right */
+        border: none;
+        border-radius: 10px;
+       }
+       /* pseudo class */
+       /* selector:pseudo class{}
+       CSS PROPERTIES */
+       button:hover{
+        background-color: orangered;
+        color: aqua;
+       }
+
+       input:focus{
+        background-color: blue;
+        color: yellowgreen;
+       }
+
+      div>p:nth-child(odd){
+        color: palevioletred;
+        font-size: 25px;
+      }
+
+      /* formula n as variable */
+
+
+    </style>
+</head>
+<body>
+
+    <button>
+        LIKE 
+    </button>
+    <input type="text" placeholder="enter the name">
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+        <p>p5</p>
+        <p>p6</p>
+        <p>p7</p>
+        <p>p8</p>
+        <p>p9</p>
+        <p>p10</p>
+    </div>
+    
+</body>
+</html>
