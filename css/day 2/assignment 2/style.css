@@ -1,0 +1,26 @@
+#container{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+
+
+#container > div{
+    width: 31%;
+    margin: auto;
+    text-align: center;
+}
+
+#container img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+h1
+{
+    font-size: 20px;
+     color: #c78b36;
+     text-align: center;
+     /* margin: 12px solid red; */
+    }
