@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+#parent{
+        display: grid;
+        /* columns  */
+        /* grid-template-columns: 100px 100px ; */
+        /* repeat function => repeat (no of times / no of cols,size of each column) */
+        grid-template-columns: repeat(2, 1fr);
+
+        /* size in 1.px 2.% 3.fraction  */
+        /* grid-row-gap: 20px;
+        grid-column-gap: 30px; */ 
+        gap: 20px 30px;
+        /* gap :row-gap col-gap */
+        /* size of column => width of child div under that particular column */
+        /* grid-template-rows: 200px 200px; */
+         /* size of rows => height of child div under that particular rows */
+         /* height of box or width  */
+      }
+
+      #parent > div{
+        color: white;
+        padding: 50px;
+        font-size: 30px;
+      }
+
+      #parent > div:first-child{
+        background-color: salmon;
+        
+
+      }
+
+      
+      #parent > div:nth-child(2){
+        background-color: seagreen;
+    
+      }
+
+      
+      #parent > div:nth-child(3){
+        background-color: slateblue;
+        flex-grow: 1;
+    
+       
+      }
+
+      #parent >div:last-child{
+        background-color: plum;
+
+   
+      }
+
+    </style>
+</head>
+<body>
+
+    <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 2d layout=> rows and columns -->
+
+<!-- screen width =100%=1200px 30px of column => 2 column => 30px =>1200 -30 =1170px / fr -->
