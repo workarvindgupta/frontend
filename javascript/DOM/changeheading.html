@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="head">naruto</h1>
+
+    <button onclick="changeheading()">change </button>
+    
+</body>
+</html>
+
+
+<script>
+    function changeheading(){
+        var heading = document.getElementById("head");
+        if(heading.textContent==='naruto'){
+            heading.textContent='itachi '
+        }
+       else{
+        heading.textContent="naruto";
+       }
+
+    }
+</script>
+
+
+<!-- logged in =>logout
+logout =>logged in -->
