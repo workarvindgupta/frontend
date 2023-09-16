@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+<body>
+    <h1>bmi calculator</h1>
+    <input placeholder="height" type="number" id="height">
+    <input placeholder="weight" type="number" id="weight">
+
+    <button id="calculate">calculate</button>
+
+    <h1>
+        your bmi is: - <span id="bmi"></span>,thats means you are <span id="status"></span>
+    </h1>
+    
+</body>
+
+<script>
+    document.getElementById("calculate").addEventListener("click",calBmi);
+
+    function calBmi(){
+        var ht =document.getElementById("height").value;
+        var wt=document.querySelector("#weight").value;
+
+        console.log(ht,wt);
+
+        var BMI =wt / ht ** 2;
+
+        console.log(BMI);
+
+        document.querySelector("#bmi").textContent=BMI.toFixed(1);
+
+        var status;
+        if (BMI < 18.5){
+            status="under weight ";
+        } else if(BMI >= 18.5 && BMI <=24.9){
+            status="normal hai "
+        } else if(BMI >=25 && BMI <=29.9){
+            status="mota hai tu"
+
+        }else{
+            status="kuch nahi hoga tera"
+        }
+
+        document.getElementById("status").textContent=status;
+        
+    }
+
+
+
+</script>
+</html>
