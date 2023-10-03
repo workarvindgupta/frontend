@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+    <form> 
+    <input id="name" placeholder="enter your name"/>
+    <input id="email" placeholder="enter your email"/>
+    <input type="submit">
+</form>
+
+    <!-- <button id="submit">
+        submit
+    </button> -->
+    <h1></h1>
+    <h2></h2>
+    
+</body>
+</html>
+
+
+
+<script>
+
+    document.querySelector("form").addEventListener("submit",getdata )
+
+    function getdata(){
+        event.preventDefault();
+        var username= document.querySelector("#name").value;
+        var mail =document.getElementById("email").value;
+
+        console.log(username);
+        console.log(mail);
+
+        document.querySelector("h1").textContent =username;
+        document.querySelector("h2").textContent=mail;
+
+        
+    }
+
+
+</script>
+
+<!-- 
+1.form tag 
+
+2. instead f button inputs with type as submit -->
+
+<!-- form tag try to send data to backend => cannot send to backend =>vanishing  -->
+
+<!-- 60 secs to cancel => cancel it => prevent default can happen  -->
+
+<!-- after 60 secs default cannot be prevented  -->
