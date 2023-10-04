@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>masai school </h1>
+</body>
+</html>
+
+<script>
+
+    var head = document.createElement("h2");
+    head.textContent="web 13"
+
+    var type =document.createElement("h3");
+    type.textContent="web 19"
+
+    var btn =document.createElement("button");
+    btn.textContent="click karo"
+    // console.log(btn);
+    btn.addEventListener("click",display);
+
+    function display(){
+        console.log(event);
+        console.log(EventTarget)
+        console.log("display");
+    }
+    console.log(type);
+    console.log(head);
+    document.querySelector("body").append(type,head,btn);
+    // document.querySelector("body").append(type);
+</script>
+
+<!-- element =>addEventListener=>additional event object  -->
