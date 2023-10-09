@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>local storage</h1>
+
+
+    <script>
+        localStorage.setItem("studentName","aviral");
+        localStorage.setItem("roll no", 45);
+        localStorage.setItem("present", true);
+
+        var arr =[1,2,3];
+
+        var student ={
+            name:"arvind"
+        };
+
+        // var studentJSON={
+        //     "name":"arvind"
+        // }
+
+        localStorage.setItem("object",JSON.stringify(student));
+
+        localStorage.setItem("array",JSON.stringify(arr));
+
+        // localStorage.setItem("studentName","siksha");
+
+        // update or modidy 
+        //unique key names 
+
+        </script>
+
+</body>
+</html>
+
+<!-- // [1,2,3] =>1,2,3 -->
+<!-- [1,2,3] =>'[1,2,3]' -->
+<!-- '[1,2,3]' => [1,2,3]  -->
+
+<!-- // JSON.stringify()  -->
+<!-- 
+'[1,2,3]'  => [1,2,3]
+
+JSON.parse() -->
