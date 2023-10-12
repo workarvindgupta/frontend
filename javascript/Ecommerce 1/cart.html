@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+
+        #container{
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            gap:20px;
+            margin-top: 10px;
+            border-radius: 30px;
+
+
+        }
+
+        #cart{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="htmljavascript.html">
+        <i class="fa-solid fa-house">Home </i>
+
+
+    </a>
+    <div id="container">
+
+    </div>
+
+    <h1> cart page</h1>
+    
+</body>
+</html>
+
+
+<script>
+var product =JSON.parse(localStorage.getItem("cardList"))|| [];
+
+if(products.length===0){
+     document.getElementById("container").textContent='there are no products in cart .do some shopping!!'
+      // displayemptypage
+
+}else{
+    displaycart();
+    calculatetotal();
+}
+
+function displaycart(){
+
+function calculatetotal(){
+    var total =product.reduce(function(acc,currel){
+        return acc + currel.finalprice;
+
+    },0);
+    // acc => product [0].final price 
+    var p =document.createElement("p");
+    p.textContent="cart value";
+
+    var p1=document.createElement("p");
+    p1.textContent =  `₹` + total;
+
+    var div =document.createElement("div");
+    div.append(p,p1);
+
+    div.setAttribute("id","cart")
+
+    document.querySelector("body").append
+}
+    product.map(function(elem){
+        var div =document.createElement("div");
+
+var image =document.createElement("img");
+image.setAttribute("src",elem.image_url);
+image.setAttribute("alt",elem.name)
+
+var name =document.createElement("h3");
+name.textContent=elem.name;
+
+var finalprice=document.createElement("p");
+            finalprice.textContent=`₹` + elem.finalprice;
+
+            div.append(image,name,finalprice);
+
+            document.getElementById("container").append(div);
+
+
+
+    })
+
+}
+    
+
+
+
+</script>
