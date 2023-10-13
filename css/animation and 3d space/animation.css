@@ -1,0 +1,34 @@
+
+@keyframes changeshape{
+
+    0%{
+        border-radius: 0%;
+    }
+    25%{
+        border-radius: 12.5%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+.div{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: aquamarine;
+    animation: changeshape 1s ease-in-out infinite alternate;
+    
+
+
+
+}
